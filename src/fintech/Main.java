@@ -15,6 +15,12 @@ public class Main {
         account.deposit(1000);
         account.withdraw(250);
 
+        Account checkingAccount = new CheckingAccount(1002, client);
+        Account savingsAccount = new SavingsAccount(1003, client);
+
+        System.out.println("Checking fee: R$ " + checkingAccount.calculateFee());
+        System.out.println("Savings fee: R$ " + savingsAccount.calculateFee());
+
         System.out.println("Account: " + account.getAccountNumber());
         System.out.println("Balance: R$ " + account.getBalance());
 

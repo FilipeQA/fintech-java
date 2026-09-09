@@ -38,4 +38,8 @@ public class Account {
     public Client getClient() {
         return client;
     }
+
+    public double calculateFee() {
+        return 0;
+    }
 }
